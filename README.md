@@ -47,3 +47,10 @@ will need to install a cross-compiler gcc suite capable of producing
 x86 ELF binaries. See http://pdos.csail.mit.edu/6.828/2016/tools.html.
 Then run "make TOOLPREFIX=i386-jos-elf-". Now install the QEMU PC
 simulator and run "make qemu".
+
+
+Build on macOS
+
+> sudo port install i386-elf-gcc gdb
+
+This will also install `i386-elf-binutils` since it's `i386-elf-gcc`'s dependence.(You may need to uninstall uninstall `texinfo` to install `i386-elf-binutils`)
